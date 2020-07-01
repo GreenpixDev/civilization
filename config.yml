@@ -1,0 +1,33 @@
+# Автор Greenpix
+
+# База данных игровых объектов (городов, цив, и прочее)
+
+game_database:
+  type: SQLITE
+  file: game.db
+  #address: 127.0.0.1
+  #port: 3306
+  #user: root
+  #password: 'password'
+  #database: civgame
+  
+# База данных для статистики (НЕ РЕАЛИЗОВАНО)
+# Для тупых - оно не будет работать
+
+#global_database:
+#  type: MYSQL
+#  address: 127.0.0.1
+#  port: 3306
+#  user: root
+#  password: 'password'
+#  database: civglobal
+
+# Часовой пояс
+
+timezone: GMT-4
+
+# Если true, сохраняет территорию до постройки структуры в папку terrain
+# При этом удаляет постройку на основе этой территории
+# Если false, удаляет постройку через worldedit regen
+
+terrain_save: true

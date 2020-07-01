@@ -1,0 +1,7 @@
+name: CivilizationReloaded
+main: ru.greenpix.civilization.CivCore
+author: Greenpix
+version: 2.1.0
+depend: [DeveloperAPI, MysqlAPI, HolographicDisplays, WorldEdit]
+softdepend: [FastAsyncWorldEdit]
+website: github.com/GreenpixDev/civilization

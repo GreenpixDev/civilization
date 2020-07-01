@@ -1,0 +1,372 @@
+# Автор Greenpix
+
+# Экономическая ветка
+agriculture:
+  icon: "292"
+  era: ANCIENT
+  displayname: "Сельское Хозяйство"
+  description: 
+  - "&fОткрывает постройку \"Ферма\""
+  cost: 500
+  beakers: 1500
+hunting:
+  icon: "272"
+  era: CLASSICAL
+  displayname: "Охота"
+  description: 
+  - "&fОткрывает постройку \"Пастбище\""
+  - "&fОткрывает чудо света \"Колизей\""
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "agriculture"
+fishing:
+  icon: "349"
+  era: CLASSICAL
+  displayname: "Рыболовство"
+  description: 
+  - "&fОткрывает постройку \"Рыбная Ферма\""
+  - "&fОткрывает чудо света \"Висячие Сады\""
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "agriculture"
+trade:
+  icon: "371"
+  era: MEDIEVAL
+  displayname: "Торговля"
+  description: 
+  - "&fОткрывает постройку \"Торговый Пост\""
+  - "&fОткрывает чудо света \"Пирамида Хеопса\""
+  cost: 3000
+  beakers: 7500
+  parents:
+  - "fishing"
+  - "masonry"
+navigation:
+  icon: "418"
+  era: MEDIEVAL
+  displayname: "Навигация"
+  description: 
+  - "&fОткрывает постройку \"Конюшня\""
+  - "&fОткрывает чудо света \"Александрийский Маяк\""
+  cost: 3000
+  beakers: 7500
+  parents:
+  - "hunting"
+  - "masonry"
+# Военная ветка
+defense:
+  icon: "303"
+  era: ANCIENT
+  displayname: "Оборона"
+  description: 
+  - "&fОткрывает постройку \"Стена\""
+  - "&fПозволяет нанимать войнов"
+  cost: 500
+  beakers: 1500
+metal_casting:
+  icon: "327"
+  era: CLASSICAL
+  displayname: "Литье Металлов"
+  description: 
+  - "&fПозволяет делать медные предметы (Т1)"
+  - "&fОткрывает чудо света \"Чичен Ица\""
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "defense"
+blacksmith_craft:
+  icon: "145"
+  era: CLASSICAL
+  displayname: "Кузнечное Дело"
+  description: 
+  - "&fПозволяет делать медную броню (Т1)"
+  - "&fОткрывает постройку \"Кузница\""
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "defense"
+archery:
+  icon: "261"
+  era: CLASSICAL
+  displayname: "Стрельба из Лука"
+  description: 
+  - "&fПозволяет делать охотничий лук (Т1)"
+  - "&fПозволяет нанимать лучников"
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "defense"
+forging:
+  icon: "267"
+  era: RENAISSANCE
+  displayname: "Ковка Железа"
+  description: 
+  - "&fПозволяет делать железные предметы (Т2)"
+  cost: 5000
+  beakers: 15000
+  parents:
+  - "blacksmith_craft"
+  - "metal_casting"
+  - "navigation"
+metallurgy:
+  icon: "307"
+  era: RENAISSANCE
+  displayname: "Металлургия"
+  description: 
+  - "&fПозволяет делать железную броню (Т2)"
+  cost: 5000
+  beakers: 15000
+  parents:
+  - "blacksmith_craft"
+  - "metal_casting"
+  - "navigation"
+arrow_plumage:
+  icon: "439"
+  era: RENAISSANCE
+  displayname: "Оперение стрел"
+  description: 
+  - "&fПозволяет делать длинный лук (Т2)"
+  cost: 5000
+  beakers: 15000
+  parents:
+  - "archery"
+  - "navigation"
+leather_dressing:
+  icon: "334"
+  era: RENAISSANCE
+  displayname: "Выделка Кожи"
+  description: 
+  - "&fПозволяет делать изысканную кожаную броню (Т2)"
+  cost: 5000
+  beakers: 15000
+  parents:
+  - "archery"
+damask_steel:
+  icon: "272"
+  era: MODERN
+  displayname: "Булатная Сталь"
+  description: 
+  - "&fПозволяет делать стальные предметы (Т3)"
+  cost: 20000
+  beakers: 60000
+  parents:
+  - "forging"
+  - "metallurgy"
+  - "artillery"
+chemistry:
+  icon: "145"
+  era: MODERN
+  displayname: "Химия"
+  description: 
+  - "&fПозволяет делать стальную броню (Т3)"
+  cost: 20000
+  beakers: 60000
+  parents:
+  - "forging"
+  - "metallurgy"
+  - "artillery"
+compound_bow:
+  icon: "261"
+  era: MODERN
+  displayname: "Составной Лук"
+  description: 
+  - "&fПозволяет делать составной лук (Т3)"
+  cost: 20000
+  beakers: 60000
+  parents:
+  - "arrow_plumage"
+  - "leather_dressing"
+  - "artillery"
+tanning:
+  icon: "32"
+  era: MODERN
+  displayname: "Дубление"
+  description: 
+  - "&fПозволяет делать закаленную кожаную броню (Т3)"
+  cost: 20000
+  beakers: 60000
+  parents:
+  - "arrow_plumage"
+  - "leather_dressing"
+  - "artillery"
+alloying:
+  icon: "384"
+  era: INFORMATION
+  displayname: "Легирование"
+  description: 
+  - "&fПозволяет делать вольфрамовые предметы (Т4)"
+  cost: 100000
+  beakers: 160000
+  parents:
+  - "chemistry"
+  - "damask_steel"
+  - "einsteins_theory"
+metal_alloys:
+  icon: "311"
+  era: INFORMATION
+  displayname: "Сплавы Металлов"
+  description: 
+  - "&fПозволяет делать вольфрамовую броню (Т4)"
+  cost: 100000
+  beakers: 160000
+  parents:
+  - "chemistry"
+  - "damask_steel"
+  - "einsteins_theory"
+lamination:
+  icon: "440"
+  era: INFORMATION
+  displayname: "Ламинация"
+  description: 
+  - "&fПозволяет делать арбалет (Т4)"
+  cost: 100000
+  beakers: 160000
+  parents:
+  - "tanning"
+  - "compound_bow"
+  - "einsteins_theory"
+composites_chemistry:
+  icon: "409"
+  era: INFORMATION
+  displayname: "Химия Композитов"
+  description: 
+  - "&fПозволяет делать композитную броню (Т4)"
+  cost: 100000
+  beakers: 320000
+  parents:
+  - "tanning"
+  - "compound_bow"
+  - "einsteins_theory"
+# Идустриальная ветка
+mining:
+  icon: "14"
+  era: ANCIENT
+  displayname: "Добыча Руд"
+  description: 
+  - "&fОткрывает постройку \"Шахта\""
+  cost: 500
+  beakers: 1500
+masonry:
+  icon: "336"
+  era: CLASSICAL
+  displayname: "Каменная Кладка"
+  description: 
+  - "&fОткрывает постройку \"Коттедж\""
+  #- "&fОткрывает постройку \"Амбар\""
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "mining"
+mechanisms:
+  icon: "33"
+  era: MEDIEVAL
+  displayname: "Механизмы"
+  description: 
+  - "&fОткрывает постройку \"Мельница\""
+  cost: 3000
+  beakers: 7500
+  parents:
+  - "masonry"
+artillery:
+  icon: "385"
+  era: RENAISSANCE
+  displayname: "Артилерия"
+  description: 
+  - "&fОткрывает постройку \"Башня\""
+  cost: 5000
+  beakers: 15000
+  parents:
+  - "mechanisms"
+education:
+  icon: "340"
+  era: INDUSTRIAL
+  displayname: "Образование"
+  description: 
+  - "&fОткрывает постройку \"Университет\""
+  cost: 10000
+  beakers: 30000
+  parents:
+  - "writing"
+  - "trade"
+  - "finance"
+# Социальная ветка
+religion:
+  icon: "406"
+  era: ANCIENT
+  displayname: "Религия"
+  description: 
+  - "&fОткрывает постройку \"Монумент\""
+  cost: 500
+  beakers: 1500
+writing:
+  icon: "339"
+  era: CLASSICAL
+  displayname: "Письменность"
+  description: 
+  - "&fОткрывает постройку \"Библиотека\""
+  - "&fОткрывает чудо света \"Александрийская Библиотека\""
+  cost: 1500
+  beakers: 3000
+  parents:
+  - "religion"
+church:
+  icon: "264"
+  era: MEDIEVAL
+  displayname: "Церковь"
+  description: 
+  - "&fОткрывает постройку \"Храм\""
+  - "&fОткрывает чудо света \"Нотр Дам\""
+  cost: 3000
+  beakers: 7500
+  parents:
+  - "writing"
+finance: 
+  icon: "266"
+  era: RENAISSANCE
+  displayname: "Финансовое Дело"
+  description: 
+  - "&fОткрывает постройку \"Банк\""
+  cost: 5000
+  beakers: 15000
+  parents:
+  - "writing"
+  - "trade"
+history:
+  icon: "318"
+  era: INDUSTRIAL
+  displayname: "История"
+  description: 
+  - "&fОткрывает постройку \"Музей\""
+  - "&fОткрывает чудо света \"Колосс Родосский\""
+  cost: 10000
+  beakers: 30000
+  parents:
+  - "leather_dressing"
+  - "church"
+economy:
+  icon: "338"
+  era: INDUSTRIAL
+  displayname: "Экономика"
+  description: 
+  - "&fОткрывает постройку \"Стадион\""
+  - "&fОткрывает чудо света \"Театр Глобус\""
+  cost: 10000
+  beakers: 30000
+  parents:
+  - "finance"
+  - "history"
+einsteins_theory:
+  icon: "399"
+  era: ATOMIC
+  displayname: "Теория Эйнштейна"
+  description: 
+  - "&fНичего не даёт =3"
+  - "&7&o(пока что...)"
+  cost: 40000
+  beakers: 125000
+  parents:
+  - "economy"
+  - "artillery"
+  - "chemistry"
